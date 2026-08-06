@@ -1,6 +1,25 @@
 # tecx_autonomous-smart-manufacturing-acpa602
 TecX(Technology Engineering Computation Expansion) Autonomous Smart Manufacturing acpa(Advanced Cyber-Physical Automation) 602
 
+# Autonomous Smart Manufacturing: Converging Edge AI, ROS 2, and 3D Printing (ACPA-602)
+
+Welcome to the official central engineering workspace repository for the **ACPA-602** curriculum. This repository houses the complete suite of open-source real-time software drivers, neural network quantization configurations, and multi-axis robotics middleware packages utilized throughout the course.
+
+## 🛠️ Main Infrastructure Core Components
+* **`/scripts`**: Automated deployment scripts for setting up your environment and patching your system with the real-time `PREEMPT_RT` Linux kernel.
+* **`/src/realtime_hardware_drivers`**: Low-latency C++ ROS 2 nodes configured with `Best Effort` QoS streaming properties to analyze latency jitter.
+* **`/src/edge_ai_controllers`**: On-device Python inference modules designed to process high-speed image streams locally on edge processors.
+
+## 🚀 One-Click Quickstart Environment Setup
+To clone this repository and configure your local ROS 2 network automatically on an Ubuntu 24.04 LTS development station, open your terminal and run:
+
+```bash
+wget -qO- https://githubusercontent.com | bash
+```
+
+## 📜 Shared Licensing Architecture
+All software driver source code streams contained within this workspace are distributed under the protective conditions of the **Apache License, Version 2.0**. All mechanical schematics, wiring maps, and curriculum documentation pages are separately licensed under the **Creative Commons Attribution-ShareAlike 4.0 International Framework (CC BY-SA 4.0)**.
+
 ```
 autonomous-smart-manufacturing-acpa602/
 ├── .github/
