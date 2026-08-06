@@ -1,0 +1,7 @@
+# Hard Real-Time Fast Security Override Service Protocol
+string node_identifier               # The tracking name of the reporting node
+uint32 fault_code                    # System fault mapping flag (e.g., 401 = TAMPERING)
+float32 current_vibration_g          # Live metrics trigger value crossing safety bounds
+---
+bool override_success                # Acknowledgment loop signal confirmation
+string structural_action_executed    # Logging string output (e.g., RELAY_ISOLATED)
