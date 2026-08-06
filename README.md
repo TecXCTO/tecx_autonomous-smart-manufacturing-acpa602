@@ -71,3 +71,5 @@ tecx_autonomous-smart-manufacturing-acpa602/
 └── README.md                          # Main repository dashboard page
 ```
 
+# Decoding the Course System Identifier:
+ACPA-602ACPA (Full Form): Advanced Cyber-Physical AutomationWhat "602" Means:The "6" (The Level): In international academic standards, the 600-level denotes an Advanced Master’s Degree or Ph.D.-tier postgraduate curriculum. It signals to corporate recruiters, HR systems, and students that this is a premium, rigorous program involving complex math and low-level code compilation, not an introductory course.The "02" (The Subject Track): This represents the specific curriculum tracking sequence within the university department's automation pipeline:Course 601: Advanced Robotics Kinematics & Embedded Real-Time MiddlewareCourse 602: Converged Edge Engineering & Hybrid Industrial Production Physics (Your Course)Course 603: Autonomous Swarm Fleets, Computer Vision, & Factory Cryptography
