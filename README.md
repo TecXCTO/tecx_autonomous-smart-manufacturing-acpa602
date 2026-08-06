@@ -23,8 +23,10 @@ All software driver source code streams contained within this workspace are dist
 # Repository Description:
 Official source code, templates, and systems engineering configurations for the ACPA-602 curriculum: Converging Edge AI, ROS 2, PREEMPT_RT, and Hybrid Additive Manufacturing.
 
+# Repository Directory Architecture
+
 ```
-autonomous-smart-manufacturing-acpa602/
+tecx_autonomous-smart-manufacturing-acpa602/
 ├── .github/
 │   └── workflows/
 │       ├── ros2_ci_build.yml          # Automated system testing loop configurations
