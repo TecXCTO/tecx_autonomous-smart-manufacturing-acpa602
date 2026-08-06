@@ -1,0 +1,36 @@
+name: ACPA-602 Workspace Continuous Integration Build Loop
+
+on:
+  push:
+    branches: [ "main", "development" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  ros2_workspace_compile:
+    runs-on: ubuntu-24.04
+
+    container:
+      image: osrf/ros:jazzy-desktop-full  # Official OSRF automated docker container image
+
+    steps:
+    - name: Check Out Repository Files
+      uses: actions/checkout@v4
+
+    - name: Initialize and Update System Dependencies
+      run: |
+        apt-get update
+        rosdep update
+        rosdep install --from-paths src --ignore-src -r -y --rosdistro jazzy
+
+    - name: Execute Source Architecture Compilation
+      run: |
+        . /opt/ros/jazzy/setup.sh
+        colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+
+    - name: Run Workspace Tests
+      run: |
+        . /opt/ros/jazzy/setup.sh
+        . install/setup.sh
+        colcon test
+        
