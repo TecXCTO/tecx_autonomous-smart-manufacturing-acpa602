@@ -20,7 +20,8 @@ wget -qO- https://githubusercontent.com | bash
 ## 📜 Shared Licensing Architecture
 All software driver source code streams contained within this workspace are distributed under the protective conditions of the **Apache License, Version 2.0**. All mechanical schematics, wiring maps, and curriculum documentation pages are separately licensed under the **Creative Commons Attribution-ShareAlike 4.0 International Framework (CC BY-SA 4.0)**.
 
-# Repository Description: Official source code, templates, and systems engineering configurations for the ACPA-602 curriculum: Converging Edge AI, ROS 2, PREEMPT_RT, and Hybrid Additive Manufacturing.
+# Repository Description:
+Official source code, templates, and systems engineering configurations for the ACPA-602 curriculum: Converging Edge AI, ROS 2, PREEMPT_RT, and Hybrid Additive Manufacturing.
 
 ```
 autonomous-smart-manufacturing-acpa602/
