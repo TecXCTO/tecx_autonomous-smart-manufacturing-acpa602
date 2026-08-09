@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>realtime_hardware_drivers</name>
+  <version>6.2.0</version>
+  <description>High-precision real-time C++ hardware driver interfaces and latency profilers.</description>
+  <maintainer email="labs@automation.edu">Advanced Automation Lab Director</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
