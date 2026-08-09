@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dds xmlns="http://eprosima.com">
+    <!-- FastDDS Boundary Configuration Profile to Isolate Lab Workcell Classrooms -->
+    <profiles>
+        <participant profile_name="isolated_workcell_participant_profile" is_default_profile="true">
+            <rtps>
+                <!-- Lock discovery mechanism to native localhost bus loopback interfaces -->
+                <useBuiltinTransports>false</useBuiltinTransports>
+                <userTransports>
+                    <transport_id>localhost_only_udp_transport</transport_id>
+                </userTransports>
+                
+                <builtin>
+                    <avoid_builtin_multicast>true</avoid_builtin_multicast>
+                    <use_SIMPLE_EndpointDiscoveryProtocol>true</use_SIMPLE_EndpointDiscoveryProtocol>
+                    <use_STATIC_EndpointDiscoveryProtocol>false</use_STATIC_EndpointDiscoveryProtocol>
+                </builtin>
+            </rtps>
+        </participant>
+
+        <!-- Low-Latency Real-Time Telemetry Data Writer Profile -->
+        <data_writer profile_name="realtime_best_effort_writer_profile">
+            <qos>
+                <reliability>
+                    <kind>BEST_EFFORT</kind>
+                </reliability>
+                <historyQos>
+                    <kind>KEEP_LAST</kind>
+                    <depth>1</depth>
+                </historyQos>
+                <durability>
+                    <kind>VOLATILE</kind>
+                </durability>
+                <publishMode>
+                    <kind>SYNCHRONOUS</kind>
+                </publishMode>
+            </qos>
+        </data_writer>
+    </profiles>
+</dds>
